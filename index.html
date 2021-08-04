@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Flappy Bird</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="theme-color" content="#333" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="description" content="A simple flappy bird web game made in javascript!" />
+  <meta name="keywords" content="techie planet,techie planet 467,467,sharmarahul webdev,programming,web developmen,flappy bird,game">
+  <meta name="robots" content="follow">
+  <meta property="og:type" content="website" />
+  <meta property="og:image" itemprop="image" content="img/thumbnail.png">
+  <meta property="og:title" content="Flappy Bird Game in JavaScript">
+  <meta property="og:url" content="https://sharmarahul111.github.io">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="language" content="English">
+</head>
+<body>
+  <div class="options">
+    <span></span><span class="score">HI 0000 0000</span>
+  </div>
+  <canvas></canvas>
+  <div class="menu">
+    <div class="btns">
+      <button class="play" onclick="start()">Play</button>
+      <button class="highscore" onclick="alert(highScore)">High Score</button>
+      <button class="reset" onclick="localStorage.setItem('flappyBirdHighScore',0);highScore=0;loadCanvas()">Reset Score</button>
+      <button class="orientation">Rotate Device</button>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
